@@ -294,7 +294,7 @@ Ext.define("Ext.ux.menu.StoreMenu", {
 
         this.callParent(arguments);
 
-       /* if(!this.store) {
+        if(!this.store) {
             //at least url/proxy or data need to be given in config when initiating this
             // component
             this.store = Ext.create('Ext.data.Store', {
@@ -312,7 +312,7 @@ Ext.define("Ext.ux.menu.StoreMenu", {
                     extraParams: this.params
                 }
             });
-        }*/
+        }
 
         this.store.on('beforeload', this.onBeforeLoad, this);
         this.store.on('load', this.onLoad, this);
